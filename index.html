@@ -21,7 +21,9 @@
         <main class="main">
             <div class="filter-genre">
                 Filter by gender:
-                <select>
+                <select v-model="activeGenre"
+                    @change="filterGenre"
+                >
                     Filter by genre
                     <option value="all">All</option>
                     <option value="rock">Rock</option>
