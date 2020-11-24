@@ -19,7 +19,55 @@ img {
     background-color: #2b3a47;
 }
 
+.filter-genre {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 50px;
+}
+
+
 .header img {
     width: 50px;
     margin: 10px;
+}
+
+ul.cds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+    color: #fff;
+    list-style: none;
+}
+
+ul.cds li {
+    flex-basis: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #2b3a47;
+    text-align: center;
+}
+
+.cds li .title {
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.cds li .author,
+.cds li .genre {
+    color: #808080;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.cds li .year {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.cds li .image {
+    min-height: 200px;
 }

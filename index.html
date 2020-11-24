@@ -19,6 +19,17 @@
 
         <!-- Main -->
         <main class="main">
+            <div class="filter-genre">
+                Filter by gender:
+                <select>
+                    Filter by genre
+                    <option value="all">All</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="metal">Metal</option>
+                    <option value="jazz">Jazz</option>
+                </select>
+            </div>
             <ul class="cds">
                 <li v-for="cd in listCds">
                     <div class="image">
