@@ -1,0 +1,25 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #192d3c;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* App */
+.header {
+    background-color: #2b3a47;
+}
+
+.header img {
+    width: 50px;
+    margin: 10px;
+}

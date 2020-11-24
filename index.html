@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-dischi</title>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Main style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- App -->
+    <div id="app">
+        <header class="header">
+            <img src="./img/logo.png" alt="logo">
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <ul class="cds">
+                <li v-for="cd in listCds">
+                    <div class="image">
+                        <img :src="cd.poster" :alt="cd.title">
+                    </div>
+                    <div class="title">
+                        <h2>{{ cd.title }}</h2>
+                    </div>
+                    <div class="author">
+                        <h3>{{ cd.author }}</h3>
+                    </div>
+                    <div class="genre">
+                        <h3>{{ cd.genre }}</h3>
+                    </div>
+                    <div class="year">
+                        <h4>{{ cd.year }}</h4>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
